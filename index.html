@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>owlwee</title>
+  <meta name="description" content="hello world... I’m still cooking.">
+  <meta name="theme-color" content="#1c4b19">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/orange-flower.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Goudy+Bookletter+1911&family=Headland+One&family=Hedvig+Letters+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="stage" id="top">
+
+      <!-- ───────── hero ───────── -->
+      <header class="top">
+        <div class="top__photo" aria-hidden="true">
+          <img src="assets/orange-flower.png" alt="" width="4000" height="3000" decoding="async" fetchpriority="high">
+        </div>
+
+        <!-- the faint wireframe lines from the design -->
+        <div class="guides" aria-hidden="true">
+          <i style="--x:0;    --y:0;    --w:1440; --h:83"></i>
+          <i style="--x:0;    --y:83;   --w:868;  --h:453"></i>
+          <i style="--x:-12;  --y:536;  --w:880;  --h:659"></i>
+          <i style="--x:1231; --y:1122; --w:209;  --h:73"></i>
+          <i style="--x:0;    --y:1122; --w:1440; --h:73"></i>
+          <i style="--x:1231; --y:737;  --w:209;  --h:385"></i>
+          <i style="--x:542;  --y:737;  --w:898;  --h:453"></i>
+          <i style="--x:203;  --y:83;   --w:665;  --h:453"></i>
+          <i style="--x:203;  --y:83;   --w:339;  --h:1107"></i>
+          <i style="--x:203;  --y:246;  --w:665;  --h:290"></i>
+          <i style="--x:542;  --y:246;  --w:689;  --h:491"></i>
+          <i style="--x:542;  --y:83;   --w:689;  --h:453"></i>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="logo" href="#top" aria-label="owlwee, back to top">
+            <img src="assets/header-logo.svg" alt="">
+          </a>
+          <!-- TODO: point these at real pages -->
+          <a class="nav__link nav__solutions" href="#">Solutions</a>
+          <a class="nav__link nav__about" href="#">About</a>
+          <a class="nav__link nav__cta" href="#">Get Started</a>
+          <a class="nav__link nav__account" href="#">
+            <span>Account</span>
+            <img class="nav__chevron" src="assets/chevron.svg" alt="">
+          </a>
+        </nav>
+
+        <h1 class="title">
+          <span class="hello">hello</span>
+          <span class="world">world...</span>
+        </h1>
+        <img class="underline" src="assets/underline-brush.svg" alt="">
+
+        <a class="explore" href="#discovery">
+          <span class="explore__label">explore</span>
+          <img class="explore__arrow" src="assets/arrow.svg" alt="">
+        </a>
+
+        <p class="handle">@owlwee.co</p>
+      </header>
+
+      <!-- ───────── discovery ───────── -->
+      <main class="main">
+        <section class="discovery" id="discovery" aria-labelledby="discovery-title">
+          <img class="tick" src="assets/tick-mark.svg" alt="">
+          <h2 class="discovery__title" id="discovery-title">Discovery</h2>
+
+          <div class="ticket ticket--pink" aria-hidden="true"><img src="assets/ticket-pink.svg" alt=""></div>
+          <div class="ticket ticket--red" aria-hidden="true"><img src="assets/ticket-red.svg" alt=""></div>
+          <div class="ticket ticket--olive" aria-hidden="true"><img src="assets/ticket-olive.svg" alt=""></div>
+
+          <p class="cooking">I’m Still cooking</p>
+        </section>
+      </main>
+
+      <!-- ───────── footer ───────── -->
+      <footer class="footer">
+        <img class="footer__logo" src="assets/footer-logo.svg" alt="owlwee">
+        <nav class="footer__nav" aria-label="Footer">
+          <!-- TODO: point these at real pages -->
+          <a class="f-project" href="#">Project</a>
+          <a class="f-about" href="#">About</a>
+          <a class="f-account" href="#">Account</a>
+          <a class="f-legal" href="#">Legal</a>
+          <a class="f-cookie" href="#">Cookie Choice</a>
+        </nav>
+        <p class="footer__copy">Owlwee All Right Reserve.</p>
+      </footer>
+
+    </div>
+  </div>
+</body>
+</html>
